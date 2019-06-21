@@ -1,0 +1,100 @@
+{
+  "goalResults": [
+    {
+      "trackedEntryDetails": [
+        {
+          "date": "2019-04-10T17:27:54.3106643+01:00",
+          "goalMet": false,
+          "goalTrackedDurationInMs": "2020000",
+          "goalTrackedDurationParsed": "00h:33m:40s"
+        },
+        {
+          "date": "2019-04-09T17:27:54.3106699+01:00",
+          "goalMet": true,
+          "goalTrackedDurationInMs": "3620000",
+          "goalTrackedDurationParsed": "01h:00m:20s"
+        },
+        {
+          "date": "2019-04-08T17:27:54.3106717+01:00",
+          "goalMet": true,
+          "goalTrackedDurationInMs": "3989000",
+          "goalTrackedDurationParsed": "01h:06m:29s"
+        },
+        {
+          "date": "2019-04-07T17:27:54.3106736+01:00",
+          "goalMet": true,
+          "goalTrackedDurationInMs": "3632000",
+          "goalTrackedDurationParsed": "01h:00m:32s"
+        },
+        {
+          "date": "2019-04-06T17:27:54.310675+01:00",
+          "goalMet": true,
+          "goalTrackedDurationInMs": "4023000",
+          "goalTrackedDurationParsed": "01h:07m:03s"
+        },
+        {
+          "date": "2019-04-05T17:27:54.3106768+01:00",
+          "goalMet": false,
+          "goalTrackedDurationInMs": "0",
+          "goalTrackedDurationParsed": "00h:00m:00s"
+        },
+        {
+          "date": "2019-04-04T17:27:54.3106782+01:00",
+          "goalMet": false,
+          "goalTrackedDurationInMs": "0",
+          "goalTrackedDurationParsed": "00h:00m:00s"
+        }
+      ],
+      "goalFriendlyName": "Reading",
+      "goalId": "5cae11229ee0276f0cdd2fd1"
+    },
+    {
+      "trackedEntryDetails": [
+        {
+          "date": "2019-04-10T17:27:54.4983768+01:00",
+          "goalMet": false,
+          "goalTrackedDurationInMs": "0",
+          "goalTrackedDurationParsed": "00h:00m:00s"
+        },
+        {
+          "date": "2019-04-09T17:27:54.4983805+01:00",
+          "goalMet": false,
+          "goalTrackedDurationInMs": "0",
+          "goalTrackedDurationParsed": "00h:00m:00s"
+        },
+        {
+          "date": "2019-04-08T17:27:54.4983819+01:00",
+          "goalMet": false,
+          "goalTrackedDurationInMs": "0",
+          "goalTrackedDurationParsed": "00h:00m:00s"
+        },
+        {
+          "date": "2019-04-07T17:27:54.4983833+01:00",
+          "goalMet": true,
+          "goalTrackedDurationInMs": "15647000",
+          "goalTrackedDurationParsed": "04h:20m:47s"
+        },
+        {
+          "date": "2019-04-06T17:27:54.4983866+01:00",
+          "goalMet": false,
+          "goalTrackedDurationInMs": "0",
+          "goalTrackedDurationParsed": "00h:00m:00s"
+        },
+        {
+          "date": "2019-04-05T17:27:54.498388+01:00",
+          "goalMet": false,
+          "goalTrackedDurationInMs": "0",
+          "goalTrackedDurationParsed": "00h:00m:00s"
+        },
+        {
+          "date": "2019-04-04T17:27:54.4983894+01:00",
+          "goalMet": true,
+          "goalTrackedDurationInMs": "7687000",
+          "goalTrackedDurationParsed": "02h:08m:07s"
+        }
+      ],
+      "goalFriendlyName": "RP",
+      "goalId": "5cae156742c9a353281cc9ad"
+    }
+  ]
+}
