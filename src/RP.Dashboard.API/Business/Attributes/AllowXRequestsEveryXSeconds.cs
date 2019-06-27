@@ -13,6 +13,7 @@ namespace RP.Dashboard.API.Business.Attributes
 	/// <remarks>
 	/// Uses the current System.Web.Caching.Cache to store each client request to the decorated route.
 	/// </remarks>
+	// Based on https://github.com/johnstaveley/SecurityEssentials/blob/master/SecurityEssentials/Core/Attributes/AllowXRequestsEveryXSeconds.cs
 	[AttributeUsage(AttributeTargets.Method)]
 	public class AllowXRequestsEveryXSecondsAttribute : ActionFilterAttribute
 	{
