@@ -2,8 +2,7 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Cors.Internal;
+using Microsoft.OpenApi.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Configuration;
@@ -14,7 +13,6 @@ using RP.Dashboard.API.Business.Helpers;
 using RP.Dashboard.API.Business.Services;
 using RP.Dashboard.API.Models.Data.DB;
 using RP.Dashboard.API.Validators;
-using Swashbuckle.AspNetCore.Swagger;
 
 namespace RP.Dashboard.API
 {
@@ -43,12 +41,6 @@ namespace RP.Dashboard.API
 			{
 				options.Authority = Configuration["Auth0:Authority"];
 				options.Audience = Configuration["Auth0:Audience"];
-			});
-
-			services.Configure<MvcOptions>(options =>
-			{
-				options.Filters.Add(new CorsAuthorizationFilterFactory(AllowDevelopmentOrigins));
-				options.Filters.Add(new CorsAuthorizationFilterFactory(AllowProductionOrigins));
 			});
 
 			services.AddCors(options =>
@@ -93,20 +85,22 @@ namespace RP.Dashboard.API
 
 			services.AddMemoryCache();
 
-			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc(option => option.EnableEndpointRouting = false);
 
-			// Register the Swagger generator, defining 1 or more Swagger documents
-			services.AddSwaggerGen(c =>
+            // Register the Swagger generator, defining 1 or more Swagger documents
+            services.AddSwaggerGen(c =>
 			{
 				// Add auth headers
 				//c.OperationFilter<AuthorizationHeaderParameterOperationFilter>();
 
-				c.SwaggerDoc("v1", new Info { Title = "RP.Dash.Api", Version = "v1-prerelease" });
+				c.SwaggerDoc("v1", new OpenApiInfo { Title = "RP.Dash.Api", Version = "v1-prerelease" });
 			});
 		}
 
-		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-		public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        // TODO change IHostingEnvironment to IWebHostingEnvironment
+        [System.Obsolete]
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 		{
 			if (env.IsDevelopment())
 			{

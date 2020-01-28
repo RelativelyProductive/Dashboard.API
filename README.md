@@ -13,7 +13,7 @@ Make sure to [join our slack](https://join.slack.com/t/relativelyproductive/shar
 
 Also see the [Contributors](/Contributors.md) list.
 
-### branching
+### Branching
 Master is the current development head. Release or Release-Candidate branches will be made for deployment.
 
 ## Resources
@@ -22,6 +22,4 @@ You will be needing the [Toggl API Docs](https://github.com/toggl/toggl_api_docs
 
 ## Tech Stack
 
-Dotnet core 2.1 (to be upgraded to 3.0 on full release).
-
-MSSQL Server (We don't need anything more advanced right now).
+Dotnet core 3.1 & MSSQL Server.
